@@ -28,9 +28,13 @@ input[type='text']:focus {
   padding: 5px 0;
   font-size: 20px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: left;
   text-align: center;
+}
+
+.county-list__svg-box {
+  width: 40px;
 }
 
 .country-list__name {
