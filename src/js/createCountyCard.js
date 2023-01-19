@@ -6,11 +6,13 @@ export const createCountryCard = ({
   population,
 }) => {
   const values = Object.values(languages);
+  const languages = values.join(', ');
+
   return `
     <table>
         <thead>
             <tr>
-                <th><img src='${flags.svg}' alt='Flag of ${name.common}' width='60'></th>
+                <th><img src='${flags.svg}' alt='Flag of ${name.common}' width='80'></th>
                 <th>${name.common}</th>
             </tr>
         </thead>
@@ -25,7 +27,7 @@ export const createCountryCard = ({
         </tr>
         <tr>
             <th>Languages:</th>
-            <td>${values}</td>
+            <td>${languages}</td>
         </tr>
     </tbody>
     
