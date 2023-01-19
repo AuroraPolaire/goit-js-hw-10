@@ -6,7 +6,7 @@ export const createCountryCard = ({
   population,
 }) => {
   const values = Object.values(languages);
-  const languages = values.join(', ');
+  const languagesList = values.join(', ');
 
   return `
     <table>
@@ -27,7 +27,7 @@ export const createCountryCard = ({
         </tr>
         <tr>
             <th>Languages:</th>
-            <td>${languages}</td>
+            <td>${languagesList}</td>
         </tr>
     </tbody>
     
