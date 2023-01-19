@@ -53,6 +53,8 @@ function onInputGetContry(e) {
       if (error.message === '404') {
         Notify.failure('Oops, there is no country with that name');
       }
+      countryInfo.innerHTML = '';
+      countryList.innerHTML = '';
     });
 }
 
