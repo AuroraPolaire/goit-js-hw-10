@@ -13,7 +13,7 @@ export const createCountryCard = ({
         <thead>
             <tr>
                 <th><img src='${flags.svg}' alt='Flag of ${name.common}' width='80'></th>
-                <th>${name.common}</th>
+                <th class="country__name">${name.common}</th>
             </tr>
         </thead>
          <tbody>
