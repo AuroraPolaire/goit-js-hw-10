@@ -32,6 +32,11 @@ body {
   flex-direction: column;
 }
 
+input[type=text]:focus {
+  border: 3px solid rgb(82, 82, 82);
+  outline: none;
+}
+
 .country-list {
   list-style: none;
 }
@@ -63,9 +68,4 @@ td {
 
 .country__name {
   font-size: 50px;
-}
-
-input[type=text]:focus {
-  border: 3px solid rgb(82, 82, 82);
-  outline: none;
 }/*# sourceMappingURL=index.css.map */

@@ -7,6 +7,9 @@ export const createCountryCard = ({
 }) => {
   const values = Object.values(languages);
   const languagesList = values.join(', ');
+  const populationNumber = population
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 
   return `
     <table>
@@ -23,7 +26,7 @@ export const createCountryCard = ({
         </tr>
         <tr>
             <th>Population:</th>
-            <td>${population}</td>
+            <td>${populationNumber}</td>
         </tr>
         <tr>
             <th>Languages:</th>
